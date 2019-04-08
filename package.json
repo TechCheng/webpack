@@ -1,0 +1,21 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SheepHan/webpack.git"
+  },
+  "author": "williamcheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SheepHan/webpack/issues"
+  },
+  "homepage": "https://github.com/SheepHan/webpack#readme",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
