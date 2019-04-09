@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "bundle":"webpack"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SheepHan/webpack.git"
@@ -18,4 +20,5 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   }
+
 }
