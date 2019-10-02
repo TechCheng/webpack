@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path');  //node的核心模块
 
 module.exports={
   // mode:"production",
@@ -6,6 +6,6 @@ module.exports={
   entry:'./src/index.js',
   output:{
     filename:"bundle.js",
-    path:path.resolve(__dirname,'dist') //默认也是dist文件夹
+    path:path.resolve(__dirname,'dist') //dirname代表webpack.config.js文件所在的路径，然后和dist作一个结合，生成bundle.js的文件所在的绝对路径
   }
 }
