@@ -115,7 +115,7 @@ eval("function Header() {\r\n  var dom = document.getElementById(\"root\");\r\n 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("//ES module引入方式\r\n\r\n// import Header from './header.js'\r\n// import Side from './side.js'\r\n// import Content from './content.js'\r\n\r\n\r\nvar Header = __webpack_require__(/*! ./header.js */ \"./src/header.js\");\r\nvar Side = __webpack_require__(/*! ./side.js */ \"./src/side.js\")\r\nvar Content = __webpack_require__(/*! ./content.js */ \"./src/content.js\")\r\n\r\n\r\nnew Header();\r\n\r\nnew Side();\r\n\r\nnew Content();\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("//ES module引入方式\r\n//webpack is a module bundler   webpack是一个模块打包工具,不是一个js翻译器\r\n\r\n// import Header from './header.js'\r\n// import Side from './side.js'\r\n// import Content from './content.js'\r\n\r\n\r\nvar Header = __webpack_require__(/*! ./header.js */ \"./src/header.js\");\r\nvar Side = __webpack_require__(/*! ./side.js */ \"./src/side.js\")\r\nvar Content = __webpack_require__(/*! ./content.js */ \"./src/content.js\")\r\n\r\n\r\nnew Header();\r\n\r\nnew Side();\r\n\r\nnew Content();\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
