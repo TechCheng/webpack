@@ -86,25 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/content.js":
+/***/ "./src/avatar.jpg":
 /*!************************!*\
-  !*** ./src/content.js ***!
+  !*** ./src/avatar.jpg ***!
   \************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("function Content() {\r\n  var dom = document.getElementById(\"root\");\r\n  var content = document.createElement(\"div\");\r\n  content.innerHTML = \"我是content\";\r\n  dom.append(content);\r\n}\r\n\r\n// export default Content;\r\nmodule.exports=Content;\n\n//# sourceURL=webpack:///./src/content.js?");
-
-/***/ }),
-
-/***/ "./src/header.js":
-/*!***********************!*\
-  !*** ./src/header.js ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function Header() {\r\n  var dom = document.getElementById(\"root\");\r\n  var header = document.createElement(\"div\");\r\n  header.innerHTML = \"我是头部\";\r\n  dom.append(header);\r\n}\r\n\r\n// export default Header;\r\n\r\nmodule.exports=Header;\n\n//# sourceURL=webpack:///./src/header.js?");
+eval("module.exports = __webpack_require__.p + \"images/avatar.jpg\";\n\n//# sourceURL=webpack:///./src/avatar.jpg?");
 
 /***/ }),
 
@@ -112,21 +101,11 @@ eval("function Header() {\r\n  var dom = document.getElementById(\"root\");\r\n 
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("//ES module引入方式\r\n//webpack is a module bundler   webpack是一个模块打包工具,不是一个js翻译器\r\n\r\n// import Header from './header.js'\r\n// import Side from './side.js'\r\n// import Content from './content.js'\r\n\r\n\r\nvar Header = __webpack_require__(/*! ./header.js */ \"./src/header.js\");\r\nvar Side = __webpack_require__(/*! ./side.js */ \"./src/side.js\")\r\nvar Content = __webpack_require__(/*! ./content.js */ \"./src/content.js\")\r\n\r\n\r\nnew Header();\r\n\r\nnew Side();\r\n\r\nnew Content();\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/side.js":
-/*!*********************!*\
-  !*** ./src/side.js ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function Side() {\r\n  var dom = document.getElementById(\"root\");\r\n  var sidebar = document.createElement(\"div\");\r\n  sidebar.innerHTML = \"我是sidebar\";\r\n  dom.append(sidebar);\r\n}\r\n\r\n// export default Side;\r\n\r\nmodule.exports=Side;\n\n//# sourceURL=webpack:///./src/side.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _avatar_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./avatar.jpg */ \"./src/avatar.jpg\");\n/* harmony import */ var _avatar_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_avatar_jpg__WEBPACK_IMPORTED_MODULE_0__);\n//ES module引入方式\r\n//webpack is a module bundler   webpack是一个模块打包工具,不是一个js翻译器\r\n\r\n// import Header from './header.js'\r\n// import Side from './side.js'\r\n// import Content from './content.js'\r\n\r\n\r\n// var Header = require('./header.js');\r\n// var Side = require('./side.js')\r\n// var Content = require('./content.js')\r\n// var img = require('./avatar.jpg')\r\n\r\n\r\n\r\n\r\nvar img = new Image()\r\nimg.src = _avatar_jpg__WEBPACK_IMPORTED_MODULE_0___default.a ;\r\n\r\nvar root = document.getElementById('root')\r\nroot.append(img)\r\n\r\nconsole.log(img)\r\n\r\n// new Header();\r\n\r\n// new Side();\r\n\r\n// new Content();\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

@@ -6,14 +6,25 @@
 // import Content from './content.js'
 
 
-var Header = require('./header.js');
-var Side = require('./side.js')
-var Content = require('./content.js')
+// var Header = require('./header.js');
+// var Side = require('./side.js')
+// var Content = require('./content.js')
+// var img = require('./avatar.jpg')
 
 
-new Header();
+import avatar from './avatar.jpg'
 
-new Side();
+var img = new Image()
+img.src = avatar ;
 
-new Content();
+var root = document.getElementById('root')
+root.append(img)
+
+console.log(img)
+
+// new Header();
+
+// new Side();
+
+// new Content();
 
