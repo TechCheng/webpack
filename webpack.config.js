@@ -46,6 +46,7 @@ module.exports = {
     template:'src/index.html'
   }),new CleanWebpackPlugin()],
   output: {
+    publicPath:'http://www.baidu.com',
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist') //dirname代表webpack.config.js文件所在的路径，然后和dist作一个结合，生成bundle.js的文件所在的绝对路径
   }
