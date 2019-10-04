@@ -13,11 +13,14 @@
 
 
 import avatar from './avatar.jpg'
-import './index.scss'
+import createAvatar from './avatar'
+import style from './index.scss'
 
+
+createAvatar()
 var img = new Image()
 img.src = avatar ;
-img.classList.add('avatar')
+img.classList.add(style.avatar)
 
 var root = document.getElementById('root')
 root.append(img)
