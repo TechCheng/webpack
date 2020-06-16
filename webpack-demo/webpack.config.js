@@ -5,10 +5,23 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin'); //自动清除�
 module.exports = {
   // mode:"production",
   mode: "development",
-  entry: './src/index.js',
+  devtool: 'source-map',  //source-map配置
+  entry: {
+    main: './src/index.js',
+    sub: './src/sub.js'
+  },
   output: {
-    filename: "bundle.js",
+    // publicPath: 'http://cdn.com.cn', //将注入到html中的js文件前面加上地址
+    filename: "[name].js",
     path: path.resolve(__dirname, 'dist') //dirname代表webpack.config.js文件所在的路径，然后和dist作一个结合，生成bundle.js的文件所在的绝对路径
+  },
+  devServer: {
+    contentBase: './dist',
+    open: true,
+    port: 8080,
+    proxy: {//配置跨域，访问的域名会被代理到本地的3000端口
+      '/api': 'http://localhost:3000'
+    }
   },
   module: {
     rules: [

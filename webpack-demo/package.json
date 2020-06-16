@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "bundle": "webpack"
+    "bundle": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +21,8 @@
     "style-loader": "^1.2.1",
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "file-loader": "^6.0.0"
