@@ -19,9 +19,13 @@
 // console.log(Avatar)
 
 import avatar from './avatar.jpg'
+import css from './style.css'
 
 var img = new Image()
-img.src = avatar 
+img.src = avatar
+
+console.log(`%c [url-loader]:`, 'color: #3381e3', avatar)
+console.log(`%c [css]:`, 'color: #988234', css)
 
 var root = document.getElementById('root')
 root.append(img)
