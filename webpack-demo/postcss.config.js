@@ -7,7 +7,7 @@
 module.exports = {
   "plugins": [
     require('autoprefixer')({
-      browsers: [
+      overrideBrowserslist: [
         "> 1%",
         "last 5 versions",
         "ie >= 7"

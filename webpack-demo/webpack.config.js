@@ -1,4 +1,6 @@
 const path = require('path'); //node的核心模块
+const HtmlWebpackPlugin = require('html-webpack-plugin'); //在打包结束后，自动生成一个html文件，把打包生成的js自动引入到这个html文件中
+const { CleanWebpackPlugin } = require('clean-webpack-plugin'); //自动清除上一次打包的dist文件
 
 module.exports = {
   // mode:"production",
@@ -34,4 +36,12 @@ module.exports = {
       },
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html' //以index.html为模板，把打包生成的js自动引入到这个html文件中
+    }),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['**/*', 'dist']
+    }), // 在打包之前，可以删除dist文件夹下的所有内容
+  ]
 }
