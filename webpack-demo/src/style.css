@@ -1,6 +1,6 @@
 #root {
-  background-color: gray;
-  height: 1000px;
+  background-color: #fff;
+  height: 400px;
   width: 100%
 }
 
@@ -14,3 +14,9 @@ img {
   border-radius: 5px;
 }
 
+#title,
+#con {
+  font-size: 35px;
+  color: #000;
+  margin-bottom: 20px;
+}
